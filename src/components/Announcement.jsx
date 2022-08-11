@@ -1,15 +1,14 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-  height: 2rem;
-  width: 99vw;
+  height: 30px;
   background-color: teal;
   color: white;
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 0.9rem;
-  font-weight: bold;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
 `;
 
 const Announcement = () => {

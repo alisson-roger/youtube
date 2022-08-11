@@ -1,16 +1,14 @@
+import { Badge } from '@material-ui/core';
+import { Search, ShoppingCartOutlined } from '@material-ui/icons';
 import React from 'react';
 import styled from 'styled-components';
 
-import { Search, ShoppingCartOutlined } from '@material-ui/icons';
-import { Badge } from '@material-ui/core';
-
 const Container = styled.div`
-  height: 6rem;
-  width: 99vw;
+  height: 60px;
 `;
 
 const Wrapper = styled.div`
-  padding: 1rem 2rem;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,7 +21,7 @@ const Left = styled.div`
 `;
 
 const Language = styled.span`
-  font-size: 1rem;
+  font-size: 14px;
   cursor: pointer;
 `;
 
@@ -31,13 +29,14 @@ const SearchContainer = styled.div`
   border: 0.5px solid lightgray;
   display: flex;
   align-items: center;
-  margin-left: 1rem;
-  padding: 0.3rem;
+  margin-left: 25px;
+  padding: 5px;
 `;
 
 const Input = styled.input`
   border: none;
 `;
+
 const Center = styled.div`
   flex: 1;
   text-align: center;
@@ -46,7 +45,6 @@ const Center = styled.div`
 const Logo = styled.h1`
   font-weight: bold;
 `;
-
 const Right = styled.div`
   flex: 1;
   display: flex;
@@ -55,9 +53,9 @@ const Right = styled.div`
 `;
 
 const MenuItem = styled.div`
-  font-size: 1rem;
+  font-size: 14px;
   cursor: pointer;
-  margin-left: 2rem;
+  margin-left: 25px;
 `;
 
 const Navbar = () => {
@@ -67,16 +65,16 @@ const Navbar = () => {
         <Left>
           <Language>EN</Language>
           <SearchContainer>
-            <Input />
-            <Search style={{ color: 'gray', fontSize: '1rem' }} />
+            <Input placeholder="Search" />
+            <Search style={{ color: 'gray', fontSize: 16 }} />
           </SearchContainer>
         </Left>
         <Center>
           <Logo>LAMA.</Logo>
         </Center>
         <Right>
-          <MenuItem> Register</MenuItem>
-          <MenuItem> Sign In</MenuItem>
+          <MenuItem>REGISTER</MenuItem>
+          <MenuItem>SIGN IN</MenuItem>
           <MenuItem>
             <Badge badgeContent={4} color="primary">
               <ShoppingCartOutlined />
