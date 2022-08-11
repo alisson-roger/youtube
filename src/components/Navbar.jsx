@@ -6,12 +6,13 @@ import { Badge } from '@material-ui/core';
 
 const Container = styled.div`
   height: 6rem;
+  width: 99vw;
 `;
 
 const Wrapper = styled.div`
   padding: 1rem 2rem;
   display: flex;
-  align-items: center
+  align-items: center;
   justify-content: space-between;
 `;
 
@@ -67,7 +68,7 @@ const Navbar = () => {
           <Language>EN</Language>
           <SearchContainer>
             <Input />
-            <Search />
+            <Search style={{ color: 'gray', fontSize: '1rem' }} />
           </SearchContainer>
         </Left>
         <Center>
